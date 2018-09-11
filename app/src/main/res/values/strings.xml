@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityPAPB</string>
+    <string name="Panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="luas">Luas</string>
+    <string name="hitung_luas">Hitung Luas</string>
+</resources>

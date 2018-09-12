@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("onCreate","Create everything");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
         _panjang =  findViewById(R.id.Panjang_text);
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _luas =  findViewById(R.id.Luas_text);
         _btHitung =  findViewById(R.id.button);
         _btHitung.setOnClickListener(this);
-        Log.d("onCreate","Create everything");
+
     }
 
     @Override
@@ -54,13 +55,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         Log.d("statusnya","Destroyjalan");
+        super.onDestroy();
     }
 
 
     @Override
     protected void onStop() {
+        Log.d("onStop","this onStop");
         super.onStop();
     }
 
